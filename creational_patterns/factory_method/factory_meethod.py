@@ -51,16 +51,14 @@ if __name__ == "__main__":
         print("=====Fiat Currency==============")
 
         print(f"\n {f1.currency_factory(USA)}")
-        # print(f"\n {f1.currency_factory()}")
         print(f"\n {f1.currency_factory(Spain)}")
         print(f"\n {f1.currency_factory(Japan)}")
 
 
         print("====Virtual currency============")
-        print(f"\n {f1.currency_factory(USA)}")
-        # print(f"\n {f1.currency_factory()}")
-        print(f"\n {f1.currency_factory(Spain)}")
-        print(f"\n {f1.currency_factory(Japan)}")
+        print(f"\n {f2.currency_factory(USA)}")
+        print(f"\n {f2.currency_factory(Spain)}")
+        print(f"\n {f2.currency_factory(Japan)}")
         
 
         
