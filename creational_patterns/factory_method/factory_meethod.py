@@ -41,7 +41,31 @@ class VirtualCurrencyFactory(CurrencyFactory):
             return "Etherium"
         else:
             return "DogeCoin"
+
+if __name__ == "__main__":
+
+        # implementation of our code in client side
+        f1 = FiatCurrencyFactory()
+        f2 = VirtualCurrencyFactory()
+
+        print("=====Fiat Currency==============")
+
+        print(f"\n {f1.currency_factory(USA)}")
+        # print(f"\n {f1.currency_factory()}")
+        print(f"\n {f1.currency_factory(Spain)}")
+        print(f"\n {f1.currency_factory(Japan)}")
+
+
+        print("====Virtual currency============")
+        print(f"\n {f1.currency_factory(USA)}")
+        # print(f"\n {f1.currency_factory()}")
+        print(f"\n {f1.currency_factory(Spain)}")
+        print(f"\n {f1.currency_factory(Japan)}")
         
+
+        
+
+                    
 
 
 
