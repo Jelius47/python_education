@@ -39,7 +39,7 @@ class AmericanRestaurant(Restaurant):
 
 # Defining the abstract class 
 class RestaurantFactory:
-    def suggest_restaurant(self,r_type: FoodType):
+    def suggest_restaurant(r_type: FoodType):
         if r_type == FoodType.french:
             return FrenchRestaurant()
         elif r_type == FoodType.american:
