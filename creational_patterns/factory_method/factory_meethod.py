@@ -1,5 +1,5 @@
 # Sincee python doesnt support abstract class
-from abc import ABC,abstractstaticmethod
+from abc import ABC,abstractmethod
 
 # Defining abstract class with basic or common functionalities
 class Country:
@@ -17,8 +17,7 @@ class Japan(Country):
 
 # The abstract method that will allow us to implement our factory
 class CurrencyFactory(ABC):
-    @abstractstaticmethod
-    @staticmethod
+    @abstractmethod
     def currency_factory(self,country)->str:
         pass
 
