@@ -29,3 +29,16 @@ class NetworkServiceBuilde:
 
 
 
+if __name__ == "__main__":
+     builder = NetworkServiceBuilde()
+     builder.add_target_url("google.com")
+
+     service1 = builder.build()
+     service1.show()
+
+     builder.add_target_url("youtube.com")
+     builder.add_auth("abc123") #simple authentication
+     builder.add_caching(60000) #this is one minute (milliseeconds)
+     service2 = builder.build()
+
+     service2.show()
