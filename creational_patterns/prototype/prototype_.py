@@ -38,7 +38,7 @@ class AbstractArt:
         [x.draw() for x in shapes]
         
        
-if __name__ == "__main__":
+if __name__ == "__main__`":
     shapes = [Square(5),Square(3), Circle(3)]
 
     art1 = AbstractArt(bg_colors="red",shapes=shapes)
