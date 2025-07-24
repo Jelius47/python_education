@@ -34,7 +34,7 @@ class AbstractArt:
         self.shapes = shapes
     
     def draw(self):
-        print(f"Background color is {self.bg_colors}")
+        print(f"Background color is {self.bg_colors}") 
         [x.draw() for x in shapes]
         
        
