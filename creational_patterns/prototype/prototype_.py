@@ -35,10 +35,10 @@ class AbstractArt:
     
     def draw(self):
         print(f"Background color is {self.bg_colors}")
-        [x.draw for x in shapes]
+        [x.draw() for x in shapes]
         
        
-if __name__ == "__name__":
+if __name__ == "__main__":
     shapes = [Square(5),Square(3), Circle(3)]
 
     art1 = AbstractArt(bg_colors="red",shapes=shapes)
@@ -49,3 +49,8 @@ if __name__ == "__name__":
     # deepcopy() - will copy the object itself as whole 
 
     art2 = copy.copy(art1)
+
+
+    # Testing the facts if they works  
+    art1.draw()
+    art2.draw()
